@@ -80,7 +80,31 @@ header{
     color:white;
     text-align:center;
 }
+form{
+max-width:600px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
 
+input,
+textarea{
+padding:15px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+padding:15px;
+background:white;
+color:black;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:bold;
+}
 footer{
     text-align:center;
     padding:20px;
@@ -149,13 +173,27 @@ footer{
 </section>
 
 <section id="kontakt" class="section contact">
-    <h2>Kostenlose Analyse anfragen</h2>
-    <br>
+<h2>Kostenlose Analyse anfragen</h2>
 
-    <p>E-Mail: alex@estateflow-berlin.de</p>
-    <p>Telefon: +49 175 8891381</p>
+<form action="https://formsubmit.co/estateflow.berlin@gmail.com" method="POST">
+
+<input type="text" name="Name" placeholder="Ihr Name" required>
+
+<input type="text" name="Unternehmen" placeholder="Unternehmen" required>
+
+<input type="email" name="E-Mail" placeholder="Ihre E-Mail" required>
+
+<input type="tel" name="Telefon" placeholder="Ihre Telefonnummer">
+
+<textarea name="Nachricht"
+placeholder="Beschreiben Sie Ihre Herausforderung"
+rows="5"
+required></textarea>
+
+<button type="submit">Anfrage senden</button>
+
+</form>
 </section>
-
 <footer>
     © 2026 EstateFlow Berlin
 </footer>
